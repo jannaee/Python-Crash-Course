@@ -8,7 +8,7 @@ break_count = 0
 
 print ("Starting..." + time.ctime())
 while (break_count < 3):
-    time.sleep(5)#program reads for 5 seconds and run 3 times
+    time.sleep(2700)#program runs every 45 minutes 3 times
     webbrowser.open("https://www.youtube.com/watch?v=5txHGxJRwtQ")
     break_count += 1
 
