@@ -1,16 +1,11 @@
 import os
-
 def rename_files():
-    #1 get file names from a folder
-    fileslist = os.listdir(r"C:\Users\Jannaee\Desktop\~GitProjects\Python-Crash-Course\secret-message-pics\new")
-    print (fileslist)# r is placed in front of the string becuase it tells python not to interpret the string in any other way but to take it as it is
-    saved_path = os.getcwd()
-    print("Current Working Directory is "+saved_path)
+    #(1) get file names from a folder
+    file_list = os.listdir(r"C:\Users\Jannaee\Desktop\~GitProjects\Python-Crash-Course\secret-message-pics\new")
+    #(2) change working directory - mind the double backslash
     os.chdir(r"C:\Users\Jannaee\Desktop\~GitProjects\Python-Crash-Course\secret-message-pics\new")
-    #2 remame each file
-    for file_name in fileslist:
-        translation_table = str.maketrans("0123456789","          ","0123456789")
-        os.rename(file_name, fileslist.translate(translation_table))
-    os.chdir(saved_path)
-
+    #(3) loop over the filename list and rename each
+    for file_name in file_list:
+        table = str.maketrans(dict.fromkeys('0123456789'))
+        os.rename(file_name,file_name.translate(table))    
 rename_files()
