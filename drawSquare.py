@@ -21,7 +21,10 @@ def draw_canvas():
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("blue")
-    angie.circle(100)
+    for i in range(1, 37):
+        angie.circle(100)
+        angie.right(10)
+        angie.speed(3)
     window.exitonclick()
 draw_canvas()
 
