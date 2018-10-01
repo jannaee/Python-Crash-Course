@@ -1,6 +1,6 @@
 import time
 import webbrowser
-#imports allow python to know bring in open a web browser
+#imports allow python to open a web browser
 
 
 total_breaks = 3
