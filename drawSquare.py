@@ -14,12 +14,14 @@ def draw_canvas():
     brad = turtle.Turtle()
     brad.shape("turtle")
     brad.color("yellow")
-    draw_square(brad)
+    for i in range(1,37):
+        draw_square(brad)
+        brad.right(10)
     #Instance of Angie
     angie = turtle.Turtle()
     angie.shape("arrow")
     angie.color("blue")
-    angie.circle(30)
+    angie.circle(100)
     window.exitonclick()
 draw_canvas()
 
