@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8ced0f1b-fa13-4dd4-89cb-cf8d14a1feab}</ProjectGuid>
+    <ProjectHome />
+    <StartupFile>break_time_app.py</StartupFile>
+    <SearchPath />
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <InterpreterId />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="break_time_app.py" />
+    <Compile Include="drawSquare.py" />
+    <Compile Include="secret-message.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="secret-message-pics\new\athens.jpg" />
+    <Content Include="secret-message-pics\new\austin.jpg" />
+    <Content Include="secret-message-pics\new\bangalore.jpg" />
+    <Content Include="secret-message-pics\new\barcelona.jpg" />
+    <Content Include="secret-message-pics\new\beijing.jpg" />
+    <Content Include="secret-message-pics\new\berkeley.jpg" />
+    <Content Include="secret-message-pics\new\bogota.jpg" />
+    <Content Include="secret-message-pics\new\bristol.jpg" />
+    <Content Include="secret-message-pics\new\bucharest.jpg" />
+    <Content Include="secret-message-pics\new\buenos aires.jpg" />
+    <Content Include="secret-message-pics\new\cairo.jpg" />
+    <Content Include="secret-message-pics\new\chennai.jpg" />
+    <Content Include="secret-message-pics\new\chicago.jpg" />
+    <Content Include="secret-message-pics\new\colombo.jpg" />
+    <Content Include="secret-message-pics\new\dallas.jpg" />
+    <Content Include="secret-message-pics\new\delhi.jpg" />
+    <Content Include="secret-message-pics\new\edinbrugh.jpg" />
+    <Content Include="secret-message-pics\new\gainesville.jpg" />
+    <Content Include="secret-message-pics\new\houston.jpg" />
+    <Content Include="secret-message-pics\new\hyderabad.jpg" />
+    <Content Include="secret-message-pics\new\istanbul.jpg" />
+    <Content Include="secret-message-pics\new\ithaca.jpg" />
+    <Content Include="secret-message-pics\new\jacksonville.jpg" />
+    <Content Include="secret-message-pics\new\karachi.jpg" />
+    <Content Include="secret-message-pics\new\kiev.jpg" />
+    <Content Include="secret-message-pics\new\london.jpg" />
+    <Content Include="secret-message-pics\new\los angeles.jpg" />
+    <Content Include="secret-message-pics\new\madrid.jpg" />
+    <Content Include="secret-message-pics\new\manchester.jpg" />
+    <Content Include="secret-message-pics\new\miami.jpg" />
+    <Content Include="secret-message-pics\new\new york.jpg" />
+    <Content Include="secret-message-pics\new\oakland.jpg" />
+    <Content Include="secret-message-pics\new\pune.jpg" />
+    <Content Include="secret-message-pics\new\rochester.jpg" />
+    <Content Include="secret-message-pics\new\san diego.jpg" />
+    <Content Include="secret-message-pics\new\san jose.jpg" />
+    <Content Include="secret-message-pics\new\sao paulo.jpg" />
+    <Content Include="secret-message-pics\new\seattle.jpg" />
+    <Content Include="secret-message-pics\new\seoul.jpg" />
+    <Content Include="secret-message-pics\new\shanghai.jpg" />
+    <Content Include="secret-message-pics\new\singapore.jpg" />
+    <Content Include="secret-message-pics\new\sunnyvale.jpg" />
+    <Content Include="secret-message-pics\new\sydney.jpg" />
+    <Content Include="secret-message-pics\new\tel aviv.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="secret-message-pics\" />
+    <Folder Include="secret-message-pics\new" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+</Project>
